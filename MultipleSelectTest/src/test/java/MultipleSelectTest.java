@@ -51,6 +51,10 @@ public class MultipleSelectTest {
         Assert.assertEquals(expectedSelectedOptions, actualSelectedOptions.toArray());
 
     }
+    @AfterMethod
+    public  void closeBrowser() {
+        driver.close();
+    }
 
 
 }
